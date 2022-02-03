@@ -32,7 +32,7 @@ function App() {
 				))}
 			</div>
 			{
-				(card.forEach((item) => (amount += item.price)),
+				(card.forEach((item) => (amount = amount + item.price)),
 				(<Total totalprice={amount.toFixed(2)} />))
 			}
 		</div>

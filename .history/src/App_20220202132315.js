@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import CardItem from './item';
-import Total from './total';
 
 function App() {
 	const [card, setcard] = useState([]);
@@ -20,21 +18,10 @@ function App() {
 				<h3>Ürün</h3>
 			</h1>
 			<div>
-				{card.map((item) => (
-					<CardItem
-						key={item.id}
-						itemid={item.id}
-						image={item.image}
-						title={item.title}
-						category={item.category}
-						price={item.price}
-					/>
-				))}
+				{card.map((item) => {
+					item.id;
+				})}
 			</div>
-			{
-				(card.forEach((item) => (amount += item.price)),
-				(<Total totalprice={amount.toFixed(2)} />))
-			}
 		</div>
 	);
 }

@@ -1,0 +1,13 @@
+.cardItem {
+	display: flex;
+	width: 98%;
+	min-height: 20vh;
+	margin-top: 10px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.cardItem img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}

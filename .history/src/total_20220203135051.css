@@ -1,0 +1,8 @@
+.checkout {
+	position: sticky;
+	top: 30px;
+	width: 300px;
+	height: 70vh;
+	background-color: orange;
+	border-radius: 1px solid rgba(0, 0, 0, 0.2);
+}

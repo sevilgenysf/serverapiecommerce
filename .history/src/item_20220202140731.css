@@ -1,0 +1,5 @@
+.cardItem {
+	display: flex;
+	width: 98%;
+	min-height: 20vh;
+}
