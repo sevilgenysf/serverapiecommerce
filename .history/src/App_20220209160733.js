@@ -85,7 +85,7 @@ function App() {
 					}
 					case '-': {
 						let count = item.querySelector('.amount').textContent;
-						if (count !== 1) {
+						if (count != 1) {
 							let productprice = item.querySelector('.details h2').textContent;
 							count--;
 							if (count > 1) {

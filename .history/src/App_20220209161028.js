@@ -13,6 +13,7 @@ function App() {
 		let result = await data.json();
 		setcard(result);
 		getItems();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
@@ -43,6 +44,7 @@ function App() {
 	);
 	function getItems() {
 		let cardItems = document.querySelectorAll('.cardItem');
+		console.log(cardItems);
 		cardItems.forEach((item, index) => {
 			itemcount = cardItems.length;
 			item.querySelectorAll('.delete').classList.add('visible');
@@ -85,7 +87,7 @@ function App() {
 					}
 					case '-': {
 						let count = item.querySelector('.amount').textContent;
-						if (count !== 1) {
+						if (count != 1) {
 							let productprice = item.querySelector('.details h2').textContent;
 							count--;
 							if (count > 1) {

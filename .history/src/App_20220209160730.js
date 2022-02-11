@@ -7,7 +7,6 @@ function App() {
 	const [card, setcard] = useState([]);
 	let amount = 0;
 	let itemcount = 0;
-	// eslint-disable-next-line react-hooks/exhaustive-deps
 	useEffect(async () => {
 		let data = await fetch('https://fakestoreapi.com/products?limit=6');
 		let result = await data.json();
@@ -85,7 +84,7 @@ function App() {
 					}
 					case '-': {
 						let count = item.querySelector('.amount').textContent;
-						if (count !== 1) {
+						if (count != 1) {
 							let productprice = item.querySelector('.details h2').textContent;
 							count--;
 							if (count > 1) {

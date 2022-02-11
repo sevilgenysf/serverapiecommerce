@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.myCard {
+	display: flex;
+	margin-left: 10px;
+}
+
+.myCard p{
+	margin-right: 5px;
+	margin-left: 5px;
+}

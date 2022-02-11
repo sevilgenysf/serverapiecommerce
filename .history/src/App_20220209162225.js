@@ -13,6 +13,7 @@ function App() {
 		let result = await data.json();
 		setcard(result);
 		getItems();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

@@ -33,6 +33,6 @@
 	}
 	to {
 		opacity: 0;
-		transform: rotateX(-100px);
+		transform: rotateX(-10px);
 	}
 }
